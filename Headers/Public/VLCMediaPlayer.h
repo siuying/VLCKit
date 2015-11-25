@@ -42,6 +42,7 @@
 /* Notification Messages */
 extern NSString *const VLCMediaPlayerTimeChanged;
 extern NSString *const VLCMediaPlayerStateChanged;
+extern NSString *const VLCMediaPlayerBufferChanged;
 
 /**
  * VLCMediaPlayerState describes the state of the media player.
@@ -77,6 +78,13 @@ extern NSString * VLCMediaPlayerStateToString(VLCMediaPlayerState state);
  * the VLCMediaPlayer object in question by sending object to aNotification.
  */
 - (void)mediaPlayerStateChanged:(NSNotification *)aNotification;
+
+/**
+ * Sent by the default notification center whenever the player's buffer state has changed.
+ * \details Discussion The value of aNotification is always an VLCMediaPlayerBufferChanged notification. You can retrieve
+ * the VLCMediaPlayer object in question by sending object to aNotification.
+ */
+- (void)mediaPlayerBufferChanged:(NSNotification *)aNotification;
 
 /**
  * Sent by the default notification center whenever the player's time has changed.
@@ -219,6 +227,11 @@ extern NSString * VLCMediaPlayerStateToString(VLCMediaPlayerState state);
  * \return movie play rate
  */
 @property (nonatomic)  float rate;
+
+/**
+ * Returns the current buffer rate of the video
+ */
+@property (nonatomic) float buffer;
 
 @property (nonatomic, readonly, weak) VLCAudio * audio;
 
