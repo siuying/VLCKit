@@ -13,6 +13,7 @@
 		41E1959A21BEA4FD00F10277 /* VLCTranscoder.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 41E1959821BEA2AF00F10277 /* VLCTranscoder.h */; };
 		4B09CED21BC463B100695566 /* VLCAudio.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 4B49C5FD1BC3D7960052D40C /* VLCAudio.h */; };
 		4B49C5FC1BC3D7870052D40C /* VLCAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B49C5FB1BC3D7870052D40C /* VLCAudio.m */; };
+		54BA7D39238AEAFA005BD641 /* VLCEventManager.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 7A5ECAE511DE8FEF00F66AF3 /* VLCEventManager.h */; };
 		6360B0E211E7F0C000EAD790 /* VLCMediaDiscoverer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6360B0E111E7F0C000EAD790 /* VLCMediaDiscoverer.m */; };
 		6360B10611E7F27300EAD790 /* VLCMediaDiscoverer.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 6360B0E311E7F0D300EAD790 /* VLCMediaDiscoverer.h */; };
 		636E975811EBC67A002FE8A9 /* VLCMediaThumbnailer.m in Sources */ = {isa = PBXBuildFile; fileRef = 636E975711EBC67A002FE8A9 /* VLCMediaThumbnailer.m */; };
@@ -190,6 +191,7 @@
 			dstPath = MobileVLCKit;
 			dstSubfolderSpec = 16;
 			files = (
+				54BA7D39238AEAFA005BD641 /* VLCEventManager.h in Copy Headers */,
 				41E1959A21BEA4FD00F10277 /* VLCTranscoder.h in Copy Headers */,
 				8D826AE1203F3CC500536EF7 /* VLCRendererDiscoverer.h in Copy Headers */,
 				8D826AE2203F3CC500536EF7 /* VLCRendererItem.h in Copy Headers */,
@@ -575,6 +577,7 @@
 				41E1959821BEA2AF00F10277 /* VLCTranscoder.h */,
 				8D2CE647203DCC48004BB7F6 /* VLCRendererDiscoverer.h */,
 				8D2CE64E203EEA47004BB7F6 /* VLCRendererItem.h */,
+				7A5ECAE511DE8FEF00F66AF3 /* VLCEventManager.h */,
 				7DEBDADE203C56BC000A7D2F /* libvlc */,
 			);
 			name = Headers;
@@ -586,7 +589,6 @@
 				7D1329761BA306DE00BE647E /* vlc-plugins-iPhone.h */,
 				7D1329771BA306E600BE647E /* vlc-plugins-AppleTV.h */,
 				7A5ECAE411DE8FEF00F66AF3 /* VLCLibVLCBridging.h */,
-				7A5ECAE511DE8FEF00F66AF3 /* VLCEventManager.h */,
 				7D803EC31C8F2AEF00864A9C /* VLCEmbeddedDialogProvider.h */,
 				7D803EC41C8F2AEF00864A9C /* VLCiOSLegacyDialogProvider.h */,
 				7D34F5551C909DF6008A39F0 /* VLCCustomDialogProvider.h */,
@@ -872,6 +874,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 0867D691FE84028FC02AAC07 /* MobileVLCKit */;

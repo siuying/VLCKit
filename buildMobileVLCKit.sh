@@ -1179,6 +1179,7 @@ if [ "$IOS" = "yes" ]; then
     lipo -create ${lipo_libs} -o MobileVLCKit.framework/MobileVLCKit && \
     chmod a+x MobileVLCKit.framework/MobileVLCKit && \
     cp -pr ${CONFIGURATION}-${platform}/MobileVLCKit MobileVLCKit.framework/Headers
+    cp -pr ${VLCROOT}/include/vlc MobileVLCKit.framework/Headers
     spopd # build
 
     info "Build of static MobileVLCKit.framework completed"
